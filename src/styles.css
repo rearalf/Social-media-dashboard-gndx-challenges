@@ -1,3 +1,82 @@
+:root {
+	/* Primary */
+	--LimeGreen: hsl(163, 72%, 41%);
+	--BrightRed: hsl(356, 69%, 56%);
+
+	--Facebook: hsl(208, 92%, 53%);
+	--Twitter: hsl(203, 89%, 53%);
+	--Instagram: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+	--YouTube: hsl(348, 97%, 39%);
+	/* Body Copy */
+	--FontsizeOverviewCardHeadings: 14px;
+}
+
+/* Light Theme */
+.is-light-mode {
+	/* 	--WhiteBG: hsl(0, 0%, 100%); */
+	/* 	--VeryPaleBlueTopBGPattern: hsl(225, 100%, 98%); */
+	--LightGrayishBlueCardBG: hsl(227, 47%, 96%);
+	/* 	--DarkGrayishBlueText: hsl(228, 12%, 44%); */
+	/* 	--VeryDarkBlueText: hsl(230, 17%, 14%); */
+
+	--backgroundColor: hsl(0, 0%, 100%);
+	--text: hsl(230, 17%, 14%);
+	--VeryTopBGPattern: hsl(225, 100%, 98%);
+	--DesaturatedText: hsl(228, 12%, 44%);
+	--DesaturatedCardBG: hsl(227, 47%, 96%);
+	--Toggle: hsl(230, 22%, 74%);
+	--hover: #e1e3f0;
+}
+
+/* Dark Theme */
+.is-dark-mode {
+	/* 	--VeryDarkBlueBG: hsl(230, 17%, 14%); */
+	/* 	--VeryDarkBlueTopBGPattern: hsl(232, 19%, 15%); */
+	/* 	--DarkDesaturatedBlueCardBG: hsl(228, 28%, 20%); */
+	/* 	--DesaturatedBlueText: hsl(228, 34%, 66%); */
+	/* 	--WhiteText: hsl(0, 0%, 100%); */
+
+	--backgroundColor: hsl(230, 17%, 14%);
+	--text: hsl(0, 0%, 100%);
+	--VeryTopBGPattern: hsl(232, 19%, 15%);
+	--DesaturatedText: hsl(228, 34%, 66%);
+	--DesaturatedCardBG: hsl(228, 28%, 20%);
+	--Toggle: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+	--hover: #333a56;
+}
+
+*::after,
+*::before,
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
 body {
-	color: red;
+	font-family: 'Inter', sans-serif;
+	background-color: var(--backgroundColor);
+	color: var(--text);
+}
+
+.wrapper {
+	/* width: 90%;
+	margin: auto; */
+	padding: 0 30px;
+}
+
+@media screen and (min-width: 768px) {
+	.wrapper {
+		/* width: 80%; */
+		max-width: 1440px;
+		margin: auto;
+		padding: 0 2rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.wrapper {
+		padding: 0 8rem;
+		max-width: 1440px;
+		margin: auto;
+	}
 }
