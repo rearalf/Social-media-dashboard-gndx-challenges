@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles.css';
+import './styles.styl';
 
 export const Header = () => {
 	const [ checked, setChecked ] = useState(true);
@@ -24,7 +24,7 @@ export const Header = () => {
 
 	return (
 		<header className="header">
-			<div className="wrapper">
+			<div className="Wrapper">
 				<div className="header_content">
 					<div className="header_text_content">
 						<h1 className="head_title">Social Media Dashboard</h1>

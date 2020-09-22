@@ -25,8 +25,8 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.css$/i,
-				use: [ 'style-loader', 'css-loader' ],
+				test: /\.(css|styl)$/i,
+				use: [ 'style-loader', 'css-loader', 'stylus-loader' ],
 			},
 			{
 				test: /\.(png|jpe?g|gif|svg)$/i,
@@ -45,6 +45,9 @@ module.exports = {
 			favicon: './public/favicon.png',
 		}),
 	],
+	resolve:{
+		extensions: ['.js', '.jsx', 'styl']
+	},
 	devServer: {
 		contentBase: path.join(__dirname, 'dist'),
 		compress: true,

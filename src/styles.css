@@ -58,14 +58,14 @@ body {
 	color: var(--text);
 }
 
-.wrapper {
+.Wrapper {
 	/* width: 90%;
 	margin: auto; */
 	padding: 0 30px;
 }
 
 @media screen and (min-width: 768px) {
-	.wrapper {
+	.Wrapper {
 		/* width: 80%; */
 		max-width: 1440px;
 		margin: auto;
@@ -74,9 +74,15 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-	.wrapper {
+	.Wrapper {
 		padding: 0 8rem;
 		max-width: 1440px;
 		margin: auto;
 	}
+}
+
+.CardPrimary:hover,
+.CardSmall:hover {
+	background-color: var(--hover);
+	cursor: pointer;
 }

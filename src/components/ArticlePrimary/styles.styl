@@ -1,0 +1,81 @@
+.CardPrimary 
+	background-color: var(--DesaturatedCardBG);
+	border-radius: .2rem;
+	padding: 20px;
+	position: relative;
+	color: var(--DesaturatedText);
+	text-align: center;
+
+.CardPrimary::before 
+	content: '';
+	display: block;
+	height: 4px;
+	border-top-left-radius: .2rem;
+	border-top-right-radius: .2rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+
+
+.CardPrimary.Facebook::before 
+	background: var(--Facebook);
+
+
+.CardPrimary.Twitter::before 
+	background: var(--Twitter);
+
+
+.CardPrimary.Instagram::before 
+	background: var(--Instagram);
+
+
+.CardPrimary.Youtube::before 
+	background: var(--YouTube);
+
+
+.CardHead 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: .9rem;
+	margin-bottom: 1.2rem;
+
+
+.CardHead img 
+	margin-right: .5rem;
+
+
+.CardBody 
+	margin-bottom: 1.5rem;
+	text-align: center;
+
+
+.CardBody .Number 
+	color: var(--text);
+	font-weight: 700;
+	font-size: 4em;
+
+
+.CardBody .Followers 
+	letter-spacing: .4rem;
+	font-weight: 400;
+
+
+.CardPrimary .Footer 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: .8em;
+	font-weight: 700;
+
+.CardPrimary .Footer  .Positive
+	color: var(--LimeGreen);
+
+.Footer .Negative
+	color: var(--BrightRed);
+
+
+.CardPrimary .Footer img 
+	margin-right: .5rem;
